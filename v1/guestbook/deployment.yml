@@ -40,3 +40,9 @@ spec:
           value: "6379"
         - name: SPRING_PROFILES_ACTIVE
           value: "prod"
+      imagePullSecrets:
+      - name: icr
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
